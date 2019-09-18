@@ -9,7 +9,7 @@ system go to File-->Project Structure-->dependencies-->(+)Add library dependency
 without version number-->search-->click on the latest version-->Add dependency--> sync.
 
 2.Entire code within xml file should be organised in this order:
--->CoordinatorLayout
+-->CoordinatorLayout &nbsp
   -->AppBarlayout
      -->CollapsingToolBarLayout
      --> a RelativeLayout (or a LinearLayout) which is basically a layout for your Collapsing toolbar i.e what is to be
