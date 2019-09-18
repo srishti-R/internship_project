@@ -28,12 +28,15 @@
             android:id="@+id/htab_collapse_toolbar"
             android:fitsSystemWindows="true"
             app:contentScrim="@color/cardview_bg"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
             app:titleEnabled="false">
 
 <RelativeLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    app:layout_collapseMode="parallax">
+
+
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/htab_header"
                 android:layout_width="match_parent"
@@ -58,17 +61,19 @@
         android:text="name"
         android:textSize="50sp"/>
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/htab_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_gravity="top"
-        app:layout_collapseMode="pin"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
 
-
-        />
 </RelativeLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/htab_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="top"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+
+
+                />
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabs"
