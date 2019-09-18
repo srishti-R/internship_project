@@ -21,7 +21,9 @@ public class Recent extends Fragment {
 
         MyAdapter adapter=new MyAdapter();
 
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
+
+
+        recyclerView = rootView.findViewById(R.id.recycler_view);
         RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext(), 1);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setAdapter(adapter);

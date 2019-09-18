@@ -1,6 +1,5 @@
 package com.android.example.internshipproject;
 
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,7 +22,9 @@ public  class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull final MyViewHolder holder, int position) {
-    ModelClass modelClass=new ModelClass("happy", "dummy");
+    ModelClass modelClass=new ModelClass("name", "Some dummy data");
+    holder.name.setText(modelClass.name);
+    holder.dummy.setText(modelClass.someDummyData);
     holder.heart.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -60,20 +61,24 @@ public  class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
-        ImageView overflow;;
+        ImageView overflow;
         ImageView heart;
         ImageView comment;
         ImageView share;
         TextView likeCounter;
+        TextView name;
+        TextView dummy;
         public MyViewHolder(@NonNull View itemView) {
 
 
             super(itemView);
-             overflow=(ImageView)itemView.findViewById(R.id.overflow);
-            heart=(ImageView)itemView.findViewById(R.id.heart);
-            comment=(ImageView)itemView.findViewById(R.id.comment);
-            share=(ImageView)itemView.findViewById(R.id.share);
-            likeCounter=(TextView)itemView.findViewById(R.id.likes);
+             overflow= itemView.findViewById(R.id.overflow);
+            heart= itemView.findViewById(R.id.heart);
+            comment= itemView.findViewById(R.id.comment);
+            share= itemView.findViewById(R.id.share);
+            likeCounter= itemView.findViewById(R.id.likes);
+            name=itemView.findViewById(R.id.name);
+            dummy=itemView.findViewById(R.id.dummy_content);
         }
     }
 }
