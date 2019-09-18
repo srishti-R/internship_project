@@ -18,7 +18,7 @@ without version number-->search-->click on the latest version-->Add dependency--
      -->TabLayout
      -->Toolbar
   -->ViewPager
-     --> include layout:<layout of your fragment>
+     --> include layout: layout of your fragment
      </pre>
   Do not forget to include layout_collapseMode as shown in my repo code.
  
