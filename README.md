@@ -4,11 +4,9 @@ with a view pager beneath, with two tabs within TabLayout. Was not able to get i
 But for anyone wondering how to make a **collapsing tool bar layout nested with a view pager, a recycler-view and embedded 
 fragments within view-pager**, here's the way to go forward.
 ## Steps:
-###1. Make sure you have the right dependencies within build.gradle(app) file. To check the latest dependencies installed in 
-system go to File-->Project Structure-->dependencies-->(+)Add library dependency-->copy and paste the dependency name 
-without version number-->search-->click on the latest version-->Add dependency--> sync.
+### 1. Make sure you have the right dependencies within build.gradle(app) file. To check the latest dependencies installed in system go to File-->Project Structure-->dependencies-->(+)Add library dependency-->copy and paste the dependency name without version number-->search-->click on the latest version-->Add dependency--> sync.
 
-###2.Entire code within xml file should be organised in this order:
+### 2.Entire code within xml file should be organised in this order:
 <pre>
 -->CoordinatorLayout 
   -->AppBarlayout
@@ -25,8 +23,7 @@ without version number-->search-->click on the latest version-->Add dependency--
 For a detailed sample with code checkout: https://gist.github.com/iPaulPro/1468510f046cb10c51ea along with my project code.
 Do not forget to include layout_behaviour within ViewPager and included layout of the fragment class.
 
-###3. Within MainActivity, initialise toolbar and set it up with view pager, also i had to initialise recycler-view and layout
-manager here and then again in my fragment class.
+### 3. Within MainActivity, initialise toolbar and set it up with view pager, also i had to initialise recycler-view and layout manager here and then again in my fragment class.
 
 Thats it! You did it.
 
