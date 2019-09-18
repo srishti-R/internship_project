@@ -9,7 +9,8 @@ system go to File-->Project Structure-->dependencies-->(+)Add library dependency
 without version number-->search-->click on the latest version-->Add dependency--> sync.
 
 2.Entire code within xml file should be organised in this order:
--->CoordinatorLayout &nbsp
+<pre>
+-->CoordinatorLayout 
   -->AppBarlayout
      -->CollapsingToolBarLayout
      --> a RelativeLayout (or a LinearLayout) which is basically a layout for your Collapsing toolbar i.e what is to be
@@ -18,6 +19,7 @@ without version number-->search-->click on the latest version-->Add dependency--
      -->Toolbar
   -->ViewPager
      --> include layout:<layout of your fragment>
+     </pre>
   Do not forget to include layout_collapseMode as shown in my repo code.
  
 For a detailed sample with code checkout: https://gist.github.com/iPaulPro/1468510f046cb10c51ea along with my project code.
