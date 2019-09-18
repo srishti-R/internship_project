@@ -26,7 +26,7 @@ Do not forget to include layout_behaviour within ViewPager and included layout o
 manager here and then again in my fragment class.
 
 Thats it! You did it.
-<img src="ezgif.com-crop.gif" height="40" width="40">
+<img src="ezgif.com-crop.gif" height="500" width="500">
 
   
   
