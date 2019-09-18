@@ -18,10 +18,12 @@ without version number-->search-->click on the latest version-->Add dependency--
      -->Toolbar
   -->ViewPager
      --> include layout:<layout of your fragment>
+  Do not forget to include layout_collapseMode as shown in my repo code.
  
 For a detailed sample with code checkout: https://gist.github.com/iPaulPro/1468510f046cb10c51ea along with my project code.
 Do not forget to include layout_behaviour within ViewPager and included layout of the fragment class.
-3. within MainActivity, initialise toolbar and set it up with view pager, also i had to initialise recycler-view and layout
+
+3. Within MainActivity, initialise toolbar and set it up with view pager, also i had to initialise recycler-view and layout
 manager here and then again in my fragment class.
 
 Thats it! You did it.
