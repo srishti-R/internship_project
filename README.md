@@ -1,6 +1,7 @@
 # internship_project
-This project was assigned to me as a part of selection process of an internship. It includes a collapsing tool bar layout
-with a view pager beneath, with two tabs within TabLayout. For anyone wondering how to make a **collapsing tool bar layout nested with a view pager, a recycler-view and embedded fragments within view-pager**, here's the way to go forward.
+This project was assigned to me as a part of selection process of an internship. For anyone wondering how to make a **collapsing tool bar layout nested with a view pager, a recycler-view and embedded fragments within view-pager**, here's the way to go forward.
+
+
 ## Steps:
 #### 1. Make sure you have the right dependencies within build.gradle(app) file. To check the latest dependencies installed in system go to File-->Project Structure-->dependencies-->(+)Add library dependency-->copy and paste the dependency name without version number-->search-->click on the latest version-->Add dependency--> sync.
 
@@ -10,7 +11,7 @@ with a view pager beneath, with two tabs within TabLayout. For anyone wondering 
   -->AppBarlayout
      -->CollapsingToolBarLayout
      --> a RelativeLayout (or a LinearLayout) which is basically a layout for your Collapsing toolbar i.e what is to be
-         shown in collpasing toolbar.
+         shown in collapsing toolbar.
      -->TabLayout
      -->Toolbar
   -->ViewPager
